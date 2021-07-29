@@ -1,0 +1,17 @@
+.content{
+    width: 90%;
+    margin: 1.4rem auto auto auto;
+}
+
+.title{
+    margin-bottom: 1rem;
+}
+
+.title h1{
+    font-size: 1.5rem;
+    color: rgb(228, 225, 225);
+}
+
+.table{
+    width: 100%;
+}
