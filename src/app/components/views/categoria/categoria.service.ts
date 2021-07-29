@@ -15,7 +15,6 @@ export class CategoriaService {
 
   listarTodasCategorias(): Observable<Categoria[]> {
     const url = `${this.baseUrl}/categorias`
-    console.log(url);
     return this.http.get<Categoria[]>(url);
   }
 }
