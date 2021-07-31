@@ -1,1 +1,28 @@
-<h1>teste</h1>
+<form>
+    <h1>Criando uma nova editora</h1>
+
+    <mat-form-field class="form">
+        <mat-label>Nome</mat-label>
+        <input matInput [(ngModel)]="editora.nome" type="text" name="nome" placeholder="Ex. Compuntação">
+    </mat-form-field>
+
+    <mat-form-field class="form">
+        <mat-label>CNPJ</mat-label>
+        <input matInput [(ngModel)]="editora.cnpj" type="text" name="cnpj" placeholder="99.999.999/9999-99">
+    </mat-form-field>
+
+    <mat-form-field class="form">
+        <mat-label>Telefone</mat-label>
+        <input matInput [(ngModel)]="editora.fone" type="text" name="fone" placeholder="99 99999-9999">
+    </mat-form-field>
+
+    <div class="buttons">
+        <button (click)="adicionar()" class="save mat-elevation-z8" mat-stroked-button>
+            <mat-icon>check</mat-icon>
+            SALVAR
+        </button>
+        <button (click)="cancelar()" class="mat-elevation-z8" color="warn" mat-stroked-button>
+            <mat-icon>delete</mat-icon> CANCELAR</button>
+    </div>
+
+</form>

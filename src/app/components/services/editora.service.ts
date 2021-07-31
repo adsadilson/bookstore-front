@@ -20,4 +20,17 @@ export class EditoraService {
     return this.http.get<Editora[]>(url);
   }
 
+  adicionar(editora: Editora): Observable<Editora> {
+    const url = `${this.baseUrl}/editoras`
+    return this.http.post<Editora>(url, editora);
+  }
+
+  mensagem(str: String): void {
+    this._snack.open(`${str}`, 'Ok', {
+      horizontalPosition: 'end',
+      verticalPosition: 'top',
+      duration: 3000
+    })
+  }
+
 }
