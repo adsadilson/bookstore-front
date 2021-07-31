@@ -11,7 +11,7 @@ import { HeaderComponent } from './components/template/header/header.component';
 import { FooterComponent } from './components/template/footer/footer.component';
 import { NavComponent } from './components/template/nav/nav.component';
 import { HomeComponent } from './components/views/home/home.component';
-import { CategoriaReadComponent } from './components/views/categoria-read/categoria-read.component';
+import { CategoriaReadComponent } from './components/views/categoria/categoria-read/categoria-read.component';
 import { CategoriaCreateComponent } from './components/views/categoria/categoria-create/categoria-create.component';
 
 import {MatToolbarModule} from '@angular/material/toolbar';
@@ -27,6 +27,8 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
 import { CategoriaDeleteComponent } from './components/views/categoria/categoria-delete/categoria-delete.component';
 import { CategoriaUpdateComponent } from './components/views/categoria/categoria-update/categoria-update.component';
 import {MatTooltipModule} from '@angular/material/tooltip';
+import { EditoraReadComponent } from './components/views/editora/editora-read/editora-read.component';
+import { EditoraCreateComponent } from './components/views/editora/editora-create/editora-create.component';
 
 
 
@@ -50,7 +52,9 @@ import {MatTooltipModule} from '@angular/material/tooltip';
     CategoriaReadComponent,
     CategoriaCreateComponent,
     CategoriaDeleteComponent,
-    CategoriaUpdateComponent
+    CategoriaUpdateComponent,
+    EditoraReadComponent,
+    EditoraCreateComponent
   ],
   imports: [
     BrowserModule,

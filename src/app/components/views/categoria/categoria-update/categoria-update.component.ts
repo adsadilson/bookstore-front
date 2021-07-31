@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { Categoria } from '../../categoria-read/categoria.model';
-import { CategoriaService } from '../categoria.service';
+import { Categoria } from '../../../model/categoria.model';
+import { CategoriaService } from '../../../services/categoria.service';
 
 @Component({
   selector: 'app-categoria-update',

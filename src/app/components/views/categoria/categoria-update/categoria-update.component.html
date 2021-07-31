@@ -1,5 +1,5 @@
 <form>
-    <h1>ATUALIZAR CATEGORIA</h1>
+    <h1>Atualizar categoria</h1>
 
     <mat-form-field class="form">
         <mat-label>Nome</mat-label>
@@ -13,8 +13,14 @@
     </mat-form-field>
 
     <div class="buttons">
-        <button (click)="atualizar()" class="mat-elevation-z8" mat-stroked-button> ATUALIZAR</button>
-        <button (click)="cancelar()" class="mat-elevation-z8" color="warn" mat-stroked-button> CANCELAR</button>
+        <button (click)="atualizar()" class="atualizar mat-elevation-z8" mat-stroked-button>
+            <mat-icon>check</mat-icon>
+            ATUALIZAR
+        </button>
+        <button (click)="cancelar()" class="mat-elevation-z8" color="warn" mat-stroked-button>
+            <mat-icon>delete</mat-icon>
+            CANCELAR
+        </button>
     </div>
 
 </form>

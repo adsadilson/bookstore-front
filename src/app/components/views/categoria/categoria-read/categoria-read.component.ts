@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { CategoriaService } from '../categoria/categoria.service';
-import { Categoria } from './categoria.model';
+import { CategoriaService } from '../../../services/categoria.service';
+import { Categoria } from '../../../model/categoria.model';
 
 @Component({
   selector: 'app-categoria-read',

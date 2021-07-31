@@ -5,14 +5,11 @@ form{
 }
 
 h1{
-    font-size: 2rem;
-    font-weight: 500;
-    margin-bottom: 3rem;
+    text-align: left;
 }
 
 .form{
     width: 100%;
-
 }
 
 .buttons{
@@ -24,5 +21,8 @@ button{
     margin-right: .5rem;
     padding-right: 2rem;
     padding-left: 2rem;
-    
+}
+
+.save{
+    color: greenyellow;
 }
