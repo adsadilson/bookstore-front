@@ -7,7 +7,8 @@ import { CategoriaUpdateComponent } from './components/views/categoria/categoria
 import { HomeComponent } from './components/views/home/home.component';
 import { EditoraReadComponent } from './components/views/editora/editora-read/editora-read.component';
 import { EditoraCreateComponent } from './components/views/editora/editora-create/editora-create.component';
-import { LivroReadComponent } from './components/views/livro-read/livro-read.component';
+import { LivroReadComponent } from './components/views/livro/livro-read/livro-read.component';
+import { LivroCreateComponent } from './components/views/livro/livro-create/livro-create.component';
 
 const routes: Routes = [
   {
@@ -35,6 +36,10 @@ const routes: Routes = [
     component: LivroReadComponent
   },
   {
+    path: "categorias/:idCad/livros/create",
+    component: LivroCreateComponent
+  },
+  {
     path: "editoras",
     component: EditoraReadComponent
   },
@@ -42,10 +47,6 @@ const routes: Routes = [
     path: "editoras/create",
     component: EditoraCreateComponent
   },
-  {
-    path: "livros",
-    component: LivroReadComponent
-  }
 ];
 
 @NgModule({

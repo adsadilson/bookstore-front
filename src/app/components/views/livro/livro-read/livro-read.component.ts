@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
-import { Livro } from '../../model/livro';
-import { LivroService } from '../../services/livro.service';
+import { ActivatedRoute, Router } from '@angular/router';
+import { Livro } from '../../../model/livro';
+import { LivroService } from '../../../services/livro.service';
 
 @Component({
   selector: 'app-livro-read',
@@ -15,7 +15,9 @@ export class LivroReadComponent implements OnInit {
   idCad: String = '';
   livros: Livro[] = []
 
-  constructor(private livroService: LivroService, private activatedRoute: ActivatedRoute) { }
+  constructor(private livroService: LivroService, 
+              private activatedRoute: ActivatedRoute,
+              private router: Router) { }
 
   ngOnInit(): void {
     this.idCad = this.activatedRoute.snapshot.paramMap.get('idCad')!;
@@ -28,6 +30,10 @@ export class LivroReadComponent implements OnInit {
       console.log(this.livros);
       console.log("id "+this.livros);
     })
+  }
+
+  navegarParCadLivro(){
+    this.router.navigate([`categorias/${this.idCad}/livros/create`]);
   }
 
 }

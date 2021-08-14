@@ -1,0 +1,29 @@
+<form>
+    <h1>Criando uma novo livro</h1>
+
+    <mat-form-field class="form">
+        <mat-label>Titulo</mat-label>
+        <input matInput  type="text" name="titulo" placeholder="Ex. Spring Boot com Angular 10">
+    </mat-form-field>
+
+    <mat-form-field class="form">
+        <mat-label>Nome autor</mat-label>
+        <input matInput  type="text" name="nomeAutor" placeholder="Ex. Apssystem">
+    </mat-form-field>
+
+    <mat-form-field class="form">
+        <mat-label>Texto</mat-label>
+        <textarea matInput type="text" name="texto"
+            placeholder="Ex. Lorim ipson"></textarea>
+    </mat-form-field>
+
+    <div class="buttons">
+        <button class="save mat-elevation-z8" mat-stroked-button>
+            <mat-icon>check</mat-icon>
+            SALVAR
+        </button>
+        <button  class="mat-elevation-z8" color="warn" mat-stroked-button>
+            <mat-icon>delete</mat-icon> CANCELAR</button>
+    </div>
+
+</form>
