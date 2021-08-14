@@ -29,6 +29,7 @@ import { CategoriaUpdateComponent } from './components/views/categoria/categoria
 import {MatTooltipModule} from '@angular/material/tooltip';
 import { EditoraReadComponent } from './components/views/editora/editora-read/editora-read.component';
 import { EditoraCreateComponent } from './components/views/editora/editora-create/editora-create.component';
+import { LivroReadComponent } from './components/views/livro-read/livro-read.component';
 
 
 
@@ -54,7 +55,8 @@ import { EditoraCreateComponent } from './components/views/editora/editora-creat
     CategoriaDeleteComponent,
     CategoriaUpdateComponent,
     EditoraReadComponent,
-    EditoraCreateComponent
+    EditoraCreateComponent,
+    LivroReadComponent
   ],
   imports: [
     BrowserModule,
