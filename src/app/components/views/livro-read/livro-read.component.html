@@ -8,7 +8,7 @@
     </button>
 
     <div class="mat-elevation-z8 content-table">
-        <table mat-table class="table">
+        <table mat-table class="table" [dataSource]="livros">
 
             <ng-container matColumnDef="id">
                 <th mat-header-cell *matHeaderCellDef> ID </th>

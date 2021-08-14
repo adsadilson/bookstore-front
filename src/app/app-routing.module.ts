@@ -31,7 +31,7 @@ const routes: Routes = [
     component: CategoriaUpdateComponent
   },
   {
-    path: "categorias/:id/livros",
+    path: "categorias/:idCad/livros",
     component: LivroReadComponent
   },
   {
